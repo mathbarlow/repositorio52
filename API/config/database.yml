@@ -1,0 +1,24 @@
+# CONFIGURACION DE BASE DE DATOS
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: uamiga_development
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: uamiga_test
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432

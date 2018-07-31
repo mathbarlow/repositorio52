@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2018-07-15 22:54:55
+  hora_inicio: 2018-07-15 22:54:55
+  hora_fin: 2018-07-15 22:54:55
+
+two:
+  fecha: 2018-07-15 22:54:55
+  hora_inicio: 2018-07-15 22:54:55
+  hora_fin: 2018-07-15 22:54:55
