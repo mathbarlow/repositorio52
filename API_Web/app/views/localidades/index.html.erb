@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Localidades</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @localidades.each do |localidad| %>
+      <tr>
+        <td><%= localidad.nombre %></td>
+        <td><%= link_to 'Mostrar', localidad %></td>
+        <td><%= link_to 'Editar', edit_localidad_path(localidad) %></td>
+        <td><%= link_to 'Borrar', localidad, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Localidad', new_localidad_path %>
+
+<hr>
+<br>
+
+<%= link_to 'Inicio', root_path %>

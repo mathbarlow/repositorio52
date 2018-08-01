@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cedula:</strong>
+  <%= @tutor.cedula %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @tutor.nombre %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @tutor.apellido %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @tutor.telefono %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @tutor.direccion %>
+</p>
+
+<%= link_to 'Edit', edit_tutor_path(@tutor) %> |
+<%= link_to 'Back', tutores_path %>

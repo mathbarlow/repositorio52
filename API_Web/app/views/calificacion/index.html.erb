@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Calificacion</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Puntaje</th>
+      <th>Comentario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calificacion.each do |calificaciones| %>
+      <tr>
+        <td><%= calificaciones.puntaje %></td>
+        <td><%= calificaciones.comentario %></td>
+        <td><%= link_to 'Show', calificaciones %></td>
+        <td><%= link_to 'Edit', edit_calificaciones_path(calificaciones) %></td>
+        <td><%= link_to 'Destroy', calificaciones, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calificaciones', new_calificaciones_path %>
+<hr>
+<br>
+
+<%= link_to 'Inicio', root_path %>
